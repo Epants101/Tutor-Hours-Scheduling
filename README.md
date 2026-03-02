@@ -10,6 +10,7 @@ If something in the guide is unclear, you may be able to find additional help he
 - https://github.com/andrewramsay/ical_to_gcal_sync?tab=readme-ov-file
 - https://developers.google.com/workspace/calendar/api/quickstart/python
 - https://developers.google.com/workspace/sheets/api/quickstart/python
+
 And you can see an example of how a tutor hours spreadsheet could be laid out here:
 - https://docs.google.com/spreadsheets/d/1mK9tzrYF8xmd1Ncdhn9qOw81cKFGS-qQVlkeK0hRkSo/edit?usp=sharing
 
@@ -19,7 +20,7 @@ This guide assumes you have a modern version of Python set up already (including
 Firstly, setting we'll set up the code base:
 
 1. Download all the source files into a directory. Open VS Code in this directory.
-2. Windows + Shift + P (or otherwise open the VS Code command palate), and select "Python: Create Environment"
+2. Ctrl + Shift + P (or otherwise open the VS Code command palate), and select "Python: Create Environment"
 3. Select venv, pick a 3.12.3 python version (other versions will probably still work)
 4. Leave .venv as the name
 5. Select install project dependencies, and use requirements.txt as your depedencies. (If there are any problems with dependencies when executing later, restart VSCode).
@@ -38,7 +39,7 @@ The spreadsheet is now ready to be read by the program. Next we will get Google 
 The two guides are practically identical, the only real difference is the link to which API to enable.
 
 8. Create a [Google Cloud Project](https://developers.google.com/workspace/guides/create-project). The project Name and ID I used are Tutor Hours Scheduling and tutor-hours-scheduling respectively.
-9. We enable the [Google Sheets API](https://console.cloud.google.com/flows/enableapi?apiid=calendar-json.googleapis.com) and [Google Calendar API](https://console.cloud.google.com/flows/enableapi?apiid=sheets.googleapis.com) (ensure the correct project is selected in the top left if you have multiple).
+9. We enable the [Google Calendar API](https://console.cloud.google.com/flows/enableapi?apiid=calendar-json.googleapis.com) and [Google Sheets API](https://console.cloud.google.com/flows/enableapi?apiid=sheets.googleapis.com) (ensure the correct project is selected in the top left if you have multiple).
 10. Follow the instructions of the above guides for Configuring OAuth consent. **Important**: If it asks you to create a client, ensure that client is a Desktop Application not Webapp or any other.
 11. Once you've created the client, the next pop-up will ask whether you want to download the credentials, make sure to download them as `account_info.json` and put them in your working directory.
 12. Under the [audience page](https://console.cloud.google.com/auth/audience), ensure to add your own email as a test user.
