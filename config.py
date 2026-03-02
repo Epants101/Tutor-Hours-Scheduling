@@ -4,35 +4,85 @@
 ICAL_FEEDS = [
     {
         "source": "./icals/master",
-        "destination": "8a14f6e116f203318fcf5ff3e815c7743d8762fea64eaec0e6984e5d698949c0@group.calendar.google.com",
+        "destination": "0a8253f0cad4cfbc4a03483314c1ecb3ee0f55e913abd8f147fefda658e36cc7@group.calendar.google.com",
         "files": True,
     },
     {
         "source": "./icals/Rhys",
-        "destination": "c896e431389ce928f25525fff189d8e38fcb59a4bc14bd428fae7e59d8a42cd2@group.calendar.google.com",
+        "destination": "8bfa932a04dac5b6117627c75fca58206a0318d4128523c87aeecf379ab3516b@group.calendar.google.com",
         "files": True,
     },
     {
         "source": "./icals/Alex",
-        "destination": "2ac3e0721d41c319de8ffb3ccb575e5201e258ae5949e046f2a62db410ee4919@group.calendar.google.com",
+        "destination": "12bab8bca27461a513e0362ec8e67b8f7e19c963dc47b936ba78702ee3ac836b@group.calendar.google.com",
         "files": True,
     },
+    {
+        "source": "./icals/Charles",
+        "destination": "88d2a629b19858ca1ad11cbbf6728d12d540e86af27ea58a723838f3b06a9956@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Ennel",
+        "destination": "db18484a3990513571610acdbd8f0ca7330244933269232b6dcce8563fb85163@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Giselle",
+        "destination": "c9c5fd8603f44e0133043da0414d90dc0d0e32309b2d4b84e186a85fe7f75c1e@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Harry",
+        "destination": "5817311b537139af2dac987b2beaa0e0efe025947cb71703cd170b7fbd705f65@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Lauren",
+        "destination": "ce06765ff8b5570c9393e4fd7f0b47753e7026aaf211e1dafa21039012f89b48@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Megan",
+        "destination": "f4de689d214dd6e266e26fb8d7d2a9d92b69ad3cc30d257903e13d19ea70ce52@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Oscar",
+        "destination": "6b951ad31eb98c3dbc3e61c98d60e85ce38e1883647b61d8fb6fc3e186278324@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Owen",
+        "destination": "ee24b7052d9c6d69debd374f07892f8c30ffbf1649abf158971ac00ba836c87f@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Simon",
+        "destination": "44fa4b2b5a994420f7ce50030b1e1af80b346fd41e9a27a6f8538cb777a59867@group.calendar.google.com",
+        "files": True,
+    },
+    {
+        "source": "./icals/Tina",
+        "destination": "56e467601bdcef2522a52657a68ec6c961a7d090549b53490c2013517d9964d4@group.calendar.google.com",
+        "files": True,
+    }
 ]
 
-SPREADSHEET_ID = "1mK9tzrYF8xmd1Ncdhn9qOw81cKFGS-qQVlkeK0hRkSo"
+SPREADSHEET_ID = "1CyLZRSk1SFdRVYnkbzy2fmLWEUF2P9S2utjD52YkW2Q"
 
-WORKSHEET_NAMES = ["Alex", "Rhys"]
+WORKSHEET_NAMES = ["Rhys", "Alex", "Charles", "Ennel", "Giselle", "Harry", "Lauren", "Megan", "Oscar", "Owen", "Simon", "Tina"]
 
 # These are the table headers chosen for the spreadsheet. They must match exactly to what is in the spreadsheet.
-DATE_HEADER = "Date"
+DATE_HEADER = "Date (Do Not Touch)"
 START_TIME_HEADER = "Start Time"
 END_TIME_HEADER = "End Time"
 LOCATION_HEADER = "Location"
 TYPE_HEADER = "Type" # This refers to the type of tutoring event, for example Tutor Hours or Seminar
-NAME_HEADER = "Name" # This is for the names of seminars and other important events
+NAME_HEADER = "Name (For Seminars)" # This is for the names of seminars and other important events
 
 # Application name for the Google Calendar API
-APPLICATION_NAME = "tutor-hours-scheduling"
+APPLICATION_NAME = "tutor-hours-scheduling-1234"
 
 # File to use for logging output
 LOGFILE = "tutor_calendar.log"
